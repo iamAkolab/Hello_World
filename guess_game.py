@@ -31,6 +31,11 @@ for guessTaken in range(1,6):
         print("you did not enter an integer")
 
 if guess == secretNumber:
-    print("Good Job! "+ player + " you guessed my number in " + str(guessTaken) + " guess(es)")
+    if guessTaken == 1:
+        print("Good Job! "+ player + " you guessed my number in " + str(guessTaken) + " guess")
+    else:
+        print("Good Job! "+ player + " you guessed my number in " + str(guessTaken) + " guesses")
+
+    
 else:
     print("Oops!, the number I was thinking of was " + str(secretNumber))
