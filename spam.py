@@ -18,3 +18,4 @@ print(div42by(21))
 print(div42by(0))
 print(div42by(12))
 print(div42by(4))
+
