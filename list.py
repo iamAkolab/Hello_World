@@ -9,4 +9,29 @@ supplies = ['staplers', 'biro', 'pencil', 'binders', 'ruler', 'marker']
 for i in range(len(supplies)):
     print("Index " + str(i) + " of the supplies is " + supplies[i])
 
-cat = ["fat"]
+cat = ["fat","orange","loud"]
+size, color, disposition = cat
+
+size1, color1, disposition1 = skinny, black, quiet
+
+a = "AAA"
+b = "BBB"
+
+a, b = b,a
+
+spam = ["Ant","rat","goat","Cat", "Dog", "elephant"]
+
+spam.append("Fox")
+spam.insert(1,"bird")
+spam.remove("rat")
+
+del spam[3]
+
+names = ["Alice","ant","Carol","Dog", "elephant"]
+
+names.sort() #Sorted in ASCII betical order
+names.sort(key = str.lower) #True Alphabetically
+
+#strings are immutable but we can create a new list
+catnames = "Zophie a cat"
+newcatname = catnames[0:7] + "the" + catnames[8:12]
