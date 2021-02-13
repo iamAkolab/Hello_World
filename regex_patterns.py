@@ -35,10 +35,18 @@ regex.search('I learned anout +*? regex syntax')
 
 #3 Phone numbers
 phoneRegex = re.compile(r'(\d\d\d-)?\d\d\d-\d\d\d\d(,)?')
-phone = phoneRegex.search("my numbers are 415-555-1101, 415-555-1102, 415-555-1103")
-print(phone.group())
-#range (start, end)
+ph = phoneRegex.search("my numbers are 415-555-1101, 415-555-1102, 415-555-1103")
+print(ph.group())
 
-haRegex = re.compile(r'(Ha)(3,5')
+# range (start, end)
+haRegex = re.compile(r'(Ha)(3,5)')
 ha = haRegex.search('He said "Hahahaha"')
-print(ha.group)
+print(ha == None) #if true was not found
+
+#Greedy Matching given range
+digitRegex  = re.compile(r'(\d)(3,5)')
+digitRegex.search('1234567890') #gets the end range i,e its greedy
+
+#enforce smallest range 
+digitRegex1  = re.compile(r'(\d)(3,5)?') #gets non greedy match
+digitRegex1.search('1234567890')
