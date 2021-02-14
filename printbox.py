@@ -29,6 +29,7 @@ def printbox(symbol,width,height):
 printbox('*', 3, 3)
 printbox('*', 8, 5)
 
+#this part should be implemented inside the code function
 try:
     raise Exception("this is the error message")
 
