@@ -1,4 +1,4 @@
-
+import traceback
 """[summary]
 
     this function print box
@@ -23,8 +23,17 @@ def printbox(symbol,width,height):
         print(symbol + ' ' * (width - 2) + symbol)
 
     print(symbol * width)
-    
+
+## printbox('*', 1, 1)    
 #printbox('*', 2, 3) found bug that return flat
 printbox('*', 3, 3)
 printbox('*', 8, 5)
 
+try:
+    raise Exception("this is the error message")
+
+except:
+    errorFile = open('error_log.txt', 'a')
+    errorFile.write(traceback.format_exc())
+    errorFile.close()
+    print('The traceback info was written error_log.txt')
