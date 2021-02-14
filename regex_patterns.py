@@ -45,7 +45,7 @@ print(ha == None) #if true was not found
 
 #Greedy Matching given range
 digitRegex  = re.compile(r'(\d)(3,5)')
-digitRegex.search('1234567890') #gets the end range i,e its greedy
+digitRegex.search('1234567890') #gets the end range i,e its greedy by default
 
 #enforce smallest range 
 digitRegex1  = re.compile(r'(\d)(3,5)?') #gets non greedy match
