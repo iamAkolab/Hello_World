@@ -1,13 +1,18 @@
+# import libraries
 import openpyxl
 import os
 
+# set the file path
 os.chdir(r'C:\\Users\\john\\Downloads')
 
+# call the library
 wb = openpyxl.load_workbook()
 print(wb.get_sheet_names())
 
+# call only one sheet by name
 sheet_one = wb.get_sheet_by_name('Sheet')
 
+# fill a column with value
 sheet_one['A1'].VALUE == None
 sheet_one['A1'].VALUE == 42
 sheet_one['A2'].VALUE == 'Hello'
