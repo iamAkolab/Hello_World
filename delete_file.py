@@ -1,20 +1,19 @@
 import os
 
 
-#delete
+# delete
 print(os.getcwd())
 os.unlink()
 
-#delete folder, folder must be empty
+# delete folder, folder must be empty
 os.rmdir("C:\\Users\\john\\heart.txt")
 
 import shutil
 
-#delete folder, everything is deleted be careful!!!
+# delete folder, everything is deleted be careful!!!
 shutil.rmtree("C:\\Users\\ai")
 
-#before deleting do a dry run by always print out the file name to be sure
-
+# before deleting do a dry run by always print out the file name to be sure
 os.chdir("C:\\Users\\john\\desktop")
 
 for filename in os.listdir():
