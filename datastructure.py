@@ -15,6 +15,7 @@ def printboard(board):
     print("---------")
     print(board["low-L"] + " | " + board["low-M"] + " | " + board["low-R"])
 
+# position of the game, state of the codes
 theboard["top-L"] = "X" 
 theboard["top-M"] = "O"
 theboard["top-R"] = "X"
