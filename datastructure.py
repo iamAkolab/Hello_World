@@ -1,13 +1,13 @@
-#A simple data structure for a tic-tac toe game
+# A simple data structure for a tic-tac toe game
 
-#create the list to hold the different states
+# create the list to hold the different states
 theboard = {
     "top-L": " ", "top-M": " ", "top-R": " ",
     "mid-L": " ", "mid-M": " ", "mid-R": " ",
-    "low-L": " ", "low-M": " ", "low-R": " "}
+    "low-L": " ", "low-M": " ", "low-R": " " }
 
 
-#function to print the board
+# function to print the board
 def printboard(board):
     print(board["top-L"] + " | " + board["top-M"] + " | " + board["top-R"])
     print("---------")
