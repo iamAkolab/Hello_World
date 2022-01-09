@@ -9,6 +9,19 @@ theboard = {
 
 # function to print the board
 def printboard(board):
+     """Count the number of times `letter` appears in `content`.
+     Args:
+       board (str): The string to search.
+       position (str): The position of the array.
+       
+  Returns:
+    string
+
+    # Add a section detailing what errors might be raised
+  Raises:
+     ValueError: If `input` is not a one-character string.
+     """
+  
     print(board["top-L"] + " | " + board["top-M"] + " | " + board["top-R"])
     print("---------")
     print(board["mid-L"] + " | " + board["mid-M"] + " | " + board["mid-R"])
