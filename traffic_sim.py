@@ -4,6 +4,20 @@ market_2nd = {'ns':'green', 'ew':'red'}
 #its enforces that a value must be true
 
 def switchLights(intersection):
+    """Traffic Simulation 
+     
+      Args:
+        assert(string) : The string to assert
+
+     Returns:
+        string
+  
+     # Add a section detailing what errors might be raised
+  
+     Raises:
+       ValueError: .
+    """
+    
     for key in intersection.keys():
         if intersection[key] == 'green':
             intersection[key] == 'yellow'
