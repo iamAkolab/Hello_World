@@ -8,7 +8,7 @@ spam()
 print(eggs)
 
 def  div42by(numbertodivby):
-     """Divide 42 by the given numberCount in `content`.
+    """Divide 42 by the given numberCount in `content`.
      
       Args:
         numbertodivby (int): The number to divide by.
