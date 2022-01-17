@@ -27,6 +27,7 @@ def switchLights(intersection):
             intersection[key] == 'green'
     assert 'red' in intersection.values(), 'Neither light is red!' + str(intersection)
 
+
 switchLights(market_2nd)
 
 
