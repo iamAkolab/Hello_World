@@ -39,13 +39,18 @@ print(os.path.isabs("c:\dictionary.py"))
 print(os.path.dirname('c:\dictionary.py'))
 print(os.path.basename('c:\dictionary.py'))
 
+
 print(os.path.exists('c:\\folder1\\folder2\\spam.png'))
 print(os.path.isfile('c:\\windows\\system32\\calc.exe'))
+
 
 print(os.path.getsize('c:\\windows\\system32\\calc.exe'))
 print(os.listdir('c:\\windows\\cursors'))
 
+
+
 totalSize = 0
+
 for filename in os.listdir('c:\\windows\\cursors'):
     if not os.path.isfile(os.path.join('c:\\windows\\cursors', filename)):
         continue
