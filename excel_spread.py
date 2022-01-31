@@ -1,16 +1,21 @@
 import openpyxl
 import os
 
+# change director
 os.chdir(r'C:\\Users\\john\\Downloads')
 
+# open a workbook
 workbook = openpyxl.load_workbook('example.xlsx')
 print(type(workbook))
 
+# open sheet in workbook
 sheet_one = workbook.get_sheet_by_name('Sheet1')
 print(type(sheet_one))
 
+# print sheet names
 print(workbook.get_sheet_names())
 
+# get cell
 cellA1 = sheet_one['A1']
 print(cellA1.value)
 
