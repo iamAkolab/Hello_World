@@ -21,8 +21,10 @@ print(cellA1.value)
 
 print(str(sheet_one['A1']))
 
+# get cell
 cellB1 = sheet_one['B1']
 print(cellB1.value)
+# get cell
 
 cellC1 = sheet_one['C1']
 print(cellC1.value)
