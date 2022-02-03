@@ -24,11 +24,12 @@ print(str(sheet_one['A1']))
 # get cell
 cellB1 = sheet_one['B1']
 print(cellB1.value)
-# get cell
 
+# get cell
 cellC1 = sheet_one['C1']
 print(cellC1.value)
 
+# get cell
 sheet_one.cell(row=1, column=2)
 
 for i in range(1,8):
