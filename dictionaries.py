@@ -14,8 +14,10 @@ print([1,2,3] == [3,2,1])
 myPc1 = {"size": 14, "color":"silver", "os":"windows10"}
 myPc2 = { "os":"windows10", "size": 14, "color":"silver"}
 
+# print binary output
 print(myPc1 == myPc2)
 
+# print color
 print("color" in myPc1)
 
 # Dictionary functions
