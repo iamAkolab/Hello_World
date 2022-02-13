@@ -1,3 +1,4 @@
+# import all the modules
 import PyPDF2
 import os
 
