@@ -1,6 +1,8 @@
+# import modules
 import PyPDF2
 import os
 
+# specify the path
 os.chdir(r'C:\\Users\\john\\Downloads')
 
 pdf1File = open('meetingminutes1.pdf','rb')
