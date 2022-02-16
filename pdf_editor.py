@@ -16,10 +16,12 @@ reader2 = PyPDF2.PdfFileReader(pdf2File)
 # create the writer object
 writer = PyPDF2.PdfFileWriter()
 
+# create a loop to open the pages
 for pageNum in range(reader1.numPages):
     page = reader1.getPage(pageNum)
     writer.addPage(page)
 
+# create a loop to open the pages
 for pageNum in range(reader2.numPages):
     page = reader1.getPage(pageNum)
     writer.addPage(page)
