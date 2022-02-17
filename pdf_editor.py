@@ -26,4 +26,5 @@ for pageNum in range(reader2.numPages):
     page = reader1.getPage(pageNum)
     writer.addPage(page)
 
+# open with write
 open('combinedminutes.pdf','wb')
