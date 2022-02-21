@@ -1,5 +1,9 @@
+# instruction to user
 print('How many cars do you have')
+
+# get user inputs
 numCar = input()
+
 
 try:
     if int(numCar) > 4:
